@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+div.error {
+  margin: 1em;
+  padding: 5px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ed8f85;
+  text-align: start;
+  color: #5c0a01;
+}
+
+div.game-stats span {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #c08a16;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+button.difficulty-selection {
+  padding: 5px 10px;
+  margin: 5px 2.5px;
+}
+
+button.flip-card {
+  padding: 3em;
+  margin: 5px 5px;
+
+  border: none;
+  background-color: #161616;
+  color: #ffffff;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+}
+
+button.flip-card.face-up {
+  background-color: #242323;
+  transform: rotateX(180deg) rotateY(180deg);
+}
+
+/* button.flip-card:nth-child(4n) {
+} */
+
+@media only screen and (max-width: 600px) {
+  div.game-stats {
+    margin-bottom: 5px;
+  }
+
+  button.flip-card {
+    padding: 1em;
+    margin: 2.5px 2.5px;
+  }
+}
